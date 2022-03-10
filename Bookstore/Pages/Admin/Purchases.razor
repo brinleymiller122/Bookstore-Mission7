@@ -1,12 +1,12 @@
 ﻿@page "/admin/purchases"
 @inherits OwningComponentBase<IPurchaseRepository>
 
-<h3>Purchases</h3>
+<h3><mark>Purchases</mark></h3>
 
-<PurchaseTable TableTitle="Uncollected Purchases" Purchases="UncollectedPurchases"
+<PurchaseTable TableTitle="Not Shipped Purchases" Purchases="UncollectedPurchases"
                ButtonLabel="Shipped" PurchaseSelected="CollectPurchase"></PurchaseTable>
 
-<PurchaseTable TableTitle="Collected Donations" Purchases="CollectedPurchases"
+<PurchaseTable TableTitle="Shipped Purchases" Purchases="CollectedPurchases"
                ButtonLabel="Reset" PurchaseSelected="ResetPurchase"></PurchaseTable>
 
 <button class="btn btn-info" @onclick="@(x => UpdateData())">Refresh Data</button>

@@ -2,7 +2,7 @@
 
 namespace Bookstore.Migrations
 {
-    public partial class newdata : Migration
+    public partial class initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
