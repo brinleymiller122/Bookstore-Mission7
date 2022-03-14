@@ -2,12 +2,15 @@
 @page "/admin"
 @inherits OwningComponentBase<IBookstoreRepository>
 
-<table class="table table-sm table-striped table-bordered">
+<table class="table table-sm table-striped table-bordered table-dark">
     <thead>
         <tr>
             <th>Book ID</th>
             <th>Book Title</th>
             <th>Book Category</th>
+            <th></th>
+            <th></th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -20,6 +23,7 @@
                         <td>@b.BookId</td>
                         <td>@b.Title</td>
                         <td>@b.Category</td>
+                        
 
                         <td>
                             <NavLink class="btn btn-info btn-sm" href="@GetDetailsUrl(b.BookId)">Details</NavLink>
